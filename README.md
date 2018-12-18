@@ -1,21 +1,25 @@
 # Cards
 
-**TODO: Add description**
+**TODO: Elixir Course**
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `cards` to your list of dependencies in `mix.exs`:
+Check more info at [Install Elixir](https://elixir-lang.org/install.html)
 
-```elixir
-def deps do
-  [
-    {:cards, "~> 0.1.0"}
-  ]
-end
+## How to run
+
+start Elixir REPL
+```
+iex -S mix
 ```
 
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/cards](https://hexdocs.pm/cards).
+Creating new Deck
+```
+Cards.create_deck
+```
+
+## Generating new elixir project
+```
+mix new name_of_project
+```
 

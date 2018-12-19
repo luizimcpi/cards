@@ -28,11 +28,10 @@ defmodule Cards do
   end
 
   def load(filename) do
-    {status, binary} = File.read(filename)
 
-    case status do
-      :ok -> :erlang.binary_to_term(binary)
-      :error -> "That file does not exist"
+    case File.read(filename) do
+      {:ok, binary} -> :erlang.binary_to_term binary
+      {:error, _reason} -> "That file does not exist" #with underscore we ignore the variable reason at compile and execution time
     end
 
   end

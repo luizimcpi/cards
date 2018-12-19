@@ -23,3 +23,10 @@ Cards.create_deck
 mix new name_of_project
 ```
 
+## Install new dependencies
+```
+go to file mix.exs and put dependencie tuple into deps block
+after that you can run the following command inside the project folder
+
+mix deps.get
+```

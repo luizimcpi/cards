@@ -26,6 +26,11 @@ defmodule Cards do
   end
 
   #Return tuple -> {hand, rest_of_deck} = Cards.deal(deck, 5)
+  @doc """
+    Divides a deck into a hand and the remainder of the deck.
+    The 'hand_size' indicates how many cards should 
+    be in the hand.
+  """
   def deal(deck, hand_size) do
     Enum.split(deck, hand_size)
   end

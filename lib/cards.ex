@@ -4,6 +4,9 @@ defmodule Cards do
     Providers methods for creating and handling a deck of cards
   """
 
+  @doc """
+    Returns a list of strings represents a deck of playing cards
+  """
   def create_deck do
     values = ["Ace", "Two", "Three", "Four", "Five"]
     suits = ["Spades", "Clubs", "Hearts", "Diamonds"]
